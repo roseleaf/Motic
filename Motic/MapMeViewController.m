@@ -9,9 +9,11 @@
 #import "MapMeViewController.h"
 #import "UserPhoto.h"
 #import <Parse/Parse.h>
+#import "CoreLocation/CoreLocation.h"
 
-@interface MapMeViewController () 
-
+@interface MapMeViewController () <CLLocationManagerDelegate>
+@property CLLocationManager* locationManager;
+@property CLLocation* startLocation;
 @end
 
 @implementation MapMeViewController
@@ -21,7 +23,10 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-//        photos = [NSMutableArray new];
+        self.locationManager = [CLLocationManager new];
+        self.locationManager.delegate = self;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        [self.locationManager startUpdatingLocation];
         [self query];
     }
     return self;
@@ -42,9 +47,9 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     CLLocationCoordinate2D zoomLocation;
-    zoomLocation.latitude = 37.777468;
-    zoomLocation.longitude= -122.400723;
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
+    zoomLocation.latitude = self.startLocation.coordinate.latitude;
+    zoomLocation.longitude= self.startLocation.coordinate.longitude;
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.2*METERS_PER_MILE, 0.2*METERS_PER_MILE);
     MKCoordinateRegion adjustedRegion = [self.mapview regionThatFits:viewRegion];
     [self query];
     [self.mapview setRegion:adjustedRegion animated:YES];
@@ -64,7 +69,13 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
+- (void)locationManager:(CLLocationManager *)manager
+    didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation
+{
+    self.startLocation = newLocation;
+    
+}
 
 -(void)plotPhotos{
     for (PFObject<MKAnnotation> *annotation in photos){

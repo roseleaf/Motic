@@ -29,6 +29,22 @@
 		96BEE8E816051380008E74E7 /* header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BEE8E216051380008E74E7 /* header@2x.png */; };
 		96BEE8E916051380008E74E7 /* lightbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BEE8E316051380008E74E7 /* lightbutton.png */; };
 		96BEE8EA16051380008E74E7 /* lightbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BEE8E416051380008E74E7 /* lightbutton@2x.png */; };
+		96CD1E8C160A5F88002A5094 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CD1E8A160A5F88002A5094 /* SettingsViewController.m */; };
+		96CD1E94160A6393002A5094 /* face.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CD1E8E160A6393002A5094 /* face.png */; };
+		96CD1E95160A6393002A5094 /* face@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CD1E8F160A6393002A5094 /* face@2x.png */; };
+		96CD1E96160A6393002A5094 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CD1E90160A6393002A5094 /* pin.png */; };
+		96CD1E97160A6393002A5094 /* pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CD1E91160A6393002A5094 /* pin@2x.png */; };
+		96CD1E98160A6393002A5094 /* pins.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CD1E92160A6393002A5094 /* pins.png */; };
+		96CD1E99160A6393002A5094 /* pins@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CD1E93160A6393002A5094 /* pins@2x.png */; };
+		96CD1E9C160A639E002A5094 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CD1E9A160A639E002A5094 /* gear.png */; };
+		96CD1E9D160A639E002A5094 /* gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CD1E9B160A639E002A5094 /* gear@2x.png */; };
+		96CD1EA8160A7372002A5094 /* SettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CD1EA7160A7372002A5094 /* SettingsView.m */; };
+		96CD1EAB160A8D7E002A5094 /* longbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CD1EA9160A8D7E002A5094 /* longbutton@2x.png */; };
+		96CD1EAC160A8D7E002A5094 /* longbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CD1EAA160A8D7E002A5094 /* longbutton.png */; };
+		96CD1EAF160A93A2002A5094 /* longerbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CD1EAD160A93A2002A5094 /* longerbutton.png */; };
+		96CD1EB0160A93A2002A5094 /* longerbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CD1EAE160A93A2002A5094 /* longerbutton@2x.png */; };
+		96CD1EB2160A97A8002A5094 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CD1EB1160A97A8002A5094 /* icon.png */; };
+		96CD1EB4160A97BF002A5094 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CD1EB3160A97BF002A5094 /* icon@2x.png */; };
 		96E94F5415FD5C5B00EC8E0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E94F5315FD5C5B00EC8E0C /* UIKit.framework */; };
 		96E94F5615FD5C5B00EC8E0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E94F5515FD5C5B00EC8E0C /* Foundation.framework */; };
 		96E94F5815FD5C5B00EC8E0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E94F5715FD5C5B00EC8E0C /* CoreGraphics.framework */; };
@@ -90,6 +106,24 @@
 		96BEE8E216051380008E74E7 /* header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "header@2x.png"; path = "../header@2x.png"; sourceTree = "<group>"; };
 		96BEE8E316051380008E74E7 /* lightbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lightbutton.png; path = ../lightbutton.png; sourceTree = "<group>"; };
 		96BEE8E416051380008E74E7 /* lightbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lightbutton@2x.png"; path = "../lightbutton@2x.png"; sourceTree = "<group>"; };
+		96CD1E89160A5F88002A5094 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		96CD1E8A160A5F88002A5094 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		96CD1E8E160A6393002A5094 /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face.png; sourceTree = "<group>"; };
+		96CD1E8F160A6393002A5094 /* face@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "face@2x.png"; sourceTree = "<group>"; };
+		96CD1E90160A6393002A5094 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		96CD1E91160A6393002A5094 /* pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin@2x.png"; sourceTree = "<group>"; };
+		96CD1E92160A6393002A5094 /* pins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pins.png; sourceTree = "<group>"; };
+		96CD1E93160A6393002A5094 /* pins@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pins@2x.png"; sourceTree = "<group>"; };
+		96CD1E9A160A639E002A5094 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		96CD1E9B160A639E002A5094 /* gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear@2x.png"; sourceTree = "<group>"; };
+		96CD1EA6160A7372002A5094 /* SettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsView.h; sourceTree = "<group>"; };
+		96CD1EA7160A7372002A5094 /* SettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsView.m; sourceTree = "<group>"; };
+		96CD1EA9160A8D7E002A5094 /* longbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "longbutton@2x.png"; sourceTree = "<group>"; };
+		96CD1EAA160A8D7E002A5094 /* longbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = longbutton.png; sourceTree = "<group>"; };
+		96CD1EAD160A93A2002A5094 /* longerbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = longerbutton.png; sourceTree = "<group>"; };
+		96CD1EAE160A93A2002A5094 /* longerbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "longerbutton@2x.png"; sourceTree = "<group>"; };
+		96CD1EB1160A97A8002A5094 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
+		96CD1EB3160A97BF002A5094 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../../icon@2x.png"; sourceTree = "<group>"; };
 		96E94F4F15FD5C5B00EC8E0C /* Motic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E94F5315FD5C5B00EC8E0C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96E94F5515FD5C5B00EC8E0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -176,6 +210,8 @@
 				9615946116078786008482E2 /* UserTableViewController.m */,
 				96E94FD615FDAE0100EC8E0C /* FaceViewController.h */,
 				96E94FD715FDAE0100EC8E0C /* FaceViewController.m */,
+				96CD1E89160A5F88002A5094 /* SettingsViewController.h */,
+				96CD1E8A160A5F88002A5094 /* SettingsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -185,6 +221,8 @@
 			children = (
 				96E94FD915FDAE7500EC8E0C /* FaceView.h */,
 				96E94FDA15FDAE7500EC8E0C /* FaceView.m */,
+				96CD1EA6160A7372002A5094 /* SettingsView.h */,
+				96CD1EA7160A7372002A5094 /* SettingsView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -244,9 +282,10 @@
 		96E94F5915FD5C5B00EC8E0C /* Motic */ = {
 			isa = PBXGroup;
 			children = (
+				96E94F8D15FD937100EC8E0C /* Assets */,
 				9615948116080630008482E2 /* Models */,
-				9615946D1607EA54008482E2 /* Controllers */,
 				9615946E1607EA80008482E2 /* Views */,
+				9615946D1607EA54008482E2 /* Controllers */,
 				96E94F6215FD5C5B00EC8E0C /* AppDelegate.h */,
 				96E94F6315FD5C5B00EC8E0C /* AppDelegate.m */,
 				96E94F5A15FD5C5B00EC8E0C /* Supporting Files */,
@@ -257,7 +296,6 @@
 		96E94F5A15FD5C5B00EC8E0C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				96E94F8D15FD937100EC8E0C /* moticAssets */,
 				96E94F5B15FD5C5B00EC8E0C /* Motic-Info.plist */,
 				96E94F5C15FD5C5B00EC8E0C /* InfoPlist.strings */,
 				96E94F5F15FD5C5B00EC8E0C /* main.m */,
@@ -266,11 +304,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		96E94F8D15FD937100EC8E0C /* moticAssets */ = {
+		96E94F8D15FD937100EC8E0C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				96CD1EB3160A97BF002A5094 /* icon@2x.png */,
+				96CD1EB1160A97A8002A5094 /* icon.png */,
+				96CD1EAD160A93A2002A5094 /* longerbutton.png */,
+				96CD1EAE160A93A2002A5094 /* longerbutton@2x.png */,
+				96CD1EA9160A8D7E002A5094 /* longbutton@2x.png */,
+				96CD1EAA160A8D7E002A5094 /* longbutton.png */,
 				9615949716092AFB008482E2 /* bartitle.png */,
 				9615949816092AFB008482E2 /* bartitle@2x.png */,
+				96CD1E8E160A6393002A5094 /* face.png */,
+				96CD1E8F160A6393002A5094 /* face@2x.png */,
+				96CD1E9A160A639E002A5094 /* gear.png */,
+				96CD1E9B160A639E002A5094 /* gear@2x.png */,
+				96CD1E90160A6393002A5094 /* pin.png */,
+				96CD1E91160A6393002A5094 /* pin@2x.png */,
+				96CD1E92160A6393002A5094 /* pins.png */,
+				96CD1E93160A6393002A5094 /* pins@2x.png */,
 				96BEE8DF16051380008E74E7 /* footer.png */,
 				96BEE8E016051380008E74E7 /* footer@2x.png */,
 				9615949B16092F1F008482E2 /* navheader.png */,
@@ -291,6 +343,7 @@
 				96E94F8E15FD937100EC8E0C /* brownbutton.png */,
 				96E94F9115FD937100EC8E0C /* motic.png */,
 			);
+			name = Assets;
 			path = moticAssets;
 			sourceTree = "<group>";
 		};
@@ -369,6 +422,20 @@
 				961594A21609310A008482E2 /* off@2x.png in Resources */,
 				961594A51609387A008482E2 /* add.png in Resources */,
 				961594A61609387A008482E2 /* add@2x.png in Resources */,
+				96CD1E94160A6393002A5094 /* face.png in Resources */,
+				96CD1E95160A6393002A5094 /* face@2x.png in Resources */,
+				96CD1E96160A6393002A5094 /* pin.png in Resources */,
+				96CD1E97160A6393002A5094 /* pin@2x.png in Resources */,
+				96CD1E98160A6393002A5094 /* pins.png in Resources */,
+				96CD1E99160A6393002A5094 /* pins@2x.png in Resources */,
+				96CD1E9C160A639E002A5094 /* gear.png in Resources */,
+				96CD1E9D160A639E002A5094 /* gear@2x.png in Resources */,
+				96CD1EAB160A8D7E002A5094 /* longbutton@2x.png in Resources */,
+				96CD1EAC160A8D7E002A5094 /* longbutton.png in Resources */,
+				96CD1EAF160A93A2002A5094 /* longerbutton.png in Resources */,
+				96CD1EB0160A93A2002A5094 /* longerbutton@2x.png in Resources */,
+				96CD1EB2160A97A8002A5094 /* icon.png in Resources */,
+				96CD1EB4160A97BF002A5094 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +459,8 @@
 				9615948016080627008482E2 /* User.m in Sources */,
 				9615948416080876008482E2 /* UserPhoto.m in Sources */,
 				9615948D16091132008482E2 /* MapAllViewController.m in Sources */,
+				96CD1E8C160A5F88002A5094 /* SettingsViewController.m in Sources */,
+				96CD1EA8160A7372002A5094 /* SettingsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +486,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rose Trujillo (HN6U72Y552)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -432,6 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "CFA0EF9A-621E-45FA-8015-626736C9B7AB";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -444,6 +515,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rose Trujillo (HN6U72Y552)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -453,6 +525,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "CFA0EF9A-621E-45FA-8015-626736C9B7AB";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -461,6 +534,8 @@
 		96E94F6815FD5C5B00EC8E0C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rose Trujillo (HN6U72Y552)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rose Trujillo (HN6U72Y552)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -469,6 +544,8 @@
 				GCC_PREFIX_HEADER = "Motic/Motic-Prefix.pch";
 				INFOPLIST_FILE = "Motic/Motic-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "CFA0EF9A-621E-45FA-8015-626736C9B7AB";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CFA0EF9A-621E-45FA-8015-626736C9B7AB";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -476,6 +553,8 @@
 		96E94F6915FD5C5B00EC8E0C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kelsey Rose Trujillo";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rose Trujillo (HN6U72Y552)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -484,6 +563,8 @@
 				GCC_PREFIX_HEADER = "Motic/Motic-Prefix.pch";
 				INFOPLIST_FILE = "Motic/Motic-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "EAF153B8-4032-4179-8FAC-65E0A719AD11";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CFA0EF9A-621E-45FA-8015-626736C9B7AB";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

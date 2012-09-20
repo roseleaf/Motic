@@ -9,9 +9,11 @@
 #import "MapAllViewController.h"
 #import "UserPhoto.h"
 #import <Parse/Parse.h>
+#import "CoreLocation/CoreLocation.h"
 
-@interface MapAllViewController ()
-
+@interface MapAllViewController () <CLLocationManagerDelegate>
+@property CLLocationManager* locationManager;
+@property CLLocation* startLocation;
 @end
 
 @implementation MapAllViewController
@@ -22,6 +24,10 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.locationManager = [CLLocationManager new];
+        self.locationManager.delegate = self;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        [self.locationManager startUpdatingLocation];
         allPhotos = [NSMutableArray new];
         PFQuery *query = [PFQuery queryWithClassName:@"UserPhoto"];
         [query setLimit:300];
@@ -40,8 +46,8 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     CLLocationCoordinate2D zoomLocation;
-    zoomLocation.latitude = 37.777468;
-    zoomLocation.longitude = -122.400723;
+    zoomLocation.latitude = self.startLocation.coordinate.latitude;
+    zoomLocation.longitude = self.startLocation.coordinate.longitude;
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 1.0*METERS_PER_MILE, 1.0*METERS_PER_MILE);
     MKCoordinateRegion adjustedRegion = [self.mapview regionThatFits:viewRegion];
     [self.mapview setRegion:adjustedRegion animated:YES];
@@ -52,13 +58,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     self.mapview.delegate = self;
     UIImageView* titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"bartitle.png"]];
     [self.navigationController.navigationBar insertSubview:titleView atIndex:0];
 
 }
-
+-(void)locationManager:(CLLocationManager*)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation{
+    self.startLocation = newLocation;
+}
 -(void)viewWillDisappear:(BOOL)animated{
     //try to save the current zoom region and send it to the NSUserDefaults
 }
@@ -104,9 +111,7 @@
         
         annotationView.enabled = YES;
         annotationView.canShowCallout = YES;
-        annotationView.image = photo.image;
-        
-        
+        annotationView.image = photo.image;        
         
         return annotationView;
     }

@@ -9,6 +9,7 @@
 #import "FaceViewController.h"
 #import "FaceView.h"
 #import "HomeViewController.h"
+#import "SettingsViewController.h"
 #import <Parse/Parse.h>
 #import <QuartzCore/QuartzCore.h>
 #import "CoreLocation/CoreLocation.h"
@@ -235,12 +236,18 @@
     UserTableViewController* userview = [UserTableViewController new];
     MapMeViewController* mapMe = [MapMeViewController new];
     MapAllViewController* mapEveryone = [MapAllViewController new];
+    SettingsViewController* settings = [SettingsViewController new];
     userview.title = @"My Motics";
     mapMe.title = @"Map Me";
     mapEveryone.title = @"Map Everyone";
-    
+    settings.title = @"My Settings";
+    userview.tabBarItem.image = [UIImage imageNamed:@"face.png"];
+    mapMe.tabBarItem.image = [UIImage imageNamed:@"pin.png"];
+    mapEveryone.tabBarItem.image = [UIImage imageNamed:@"pins.png"];
+    settings.tabBarItem.image = [UIImage imageNamed: @"gear.png"];
     UITabBarController* tabBar = [[UITabBarController alloc]init];
-    tabBar.viewControllers = [NSArray arrayWithObjects:userview, mapMe, mapEveryone, nil];
+    tabBar.viewControllers = [NSArray arrayWithObjects:userview, mapMe, mapEveryone, settings, nil];
+    tabBar.tabBar.tintColor = [UIColor darkGrayColor];
     
     UIButton* offButton = [UIButton buttonWithType:UIButtonTypeCustom];
     offButton.frame = CGRectMake(0, 0, 50, 50);
@@ -251,7 +258,7 @@
     UIBarButtonItem* signOut = [[UIBarButtonItem alloc]initWithCustomView:offButton];
     
     UIButton* addButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    addButton.frame = CGRectMake(0, 0, 50, 50);
+    addButton.frame = CGRectMake(0, 0, 40, 40);
     UIImage* addImage = [UIImage imageNamed:@"add.png"];
     [addButton setImage:addImage forState:UIControlStateNormal];
     [addButton addTarget:self action:@selector(showFace) forControlEvents:UIControlEventTouchDown];

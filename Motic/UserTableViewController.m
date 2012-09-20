@@ -20,19 +20,12 @@
 
         // The className to query on
         self.className = @"UserPhoto";
-        // The key of the PFObject to display in the label of the default cell style
         self.textKey = @"time";
+        self.imageKey = @"imageFile";
         
-        // Uncomment the following line to specify the key of a PFFile on the PFObject to display in the imageView of the default cell style
-         self.imageKey = @"imageFile";
-        
-        // Whether the built-in pull-to-refresh is enabled
         self.pullToRefreshEnabled = YES;
         
-        // Whether the built-in pagination is enabled
         self.paginationEnabled = YES;
-        
-        // The number of objects to show per page
         self.objectsPerPage = 25;
     }
     return self;
@@ -41,8 +34,6 @@
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
 }
 
 
@@ -124,9 +115,6 @@
  */
 
 
- // Override to customize the look of a cell representing an object. The default is to display
- // a UITableViewCellStyleDefault style cell with the label being the textKey in the object,
- // and the imageView being the imageKey in the object.
  
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object {
     static NSString *CellIdentifier = @"Cell";
@@ -182,30 +170,7 @@
  }
  */
 
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the object from Parse and reload the table view
- } else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, and save it to Parse
- }
- }
- */
 
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
 
 #pragma mark - UITableViewDelegate
 
