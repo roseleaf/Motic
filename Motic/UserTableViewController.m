@@ -8,8 +8,9 @@
 
 #import "UserTableViewController.h"
 
-@interface UserTableViewController ()
-
+@interface UserTableViewController () {
+    NSMutableArray* photos;
+}
 @end
 
 @implementation UserTableViewController
@@ -20,8 +21,8 @@
 
         // The className to query on
         self.className = @"UserPhoto";
-        self.textKey = @"time";
-        self.imageKey = @"imageFile";
+//        self.textKey = @"time";
+//        self.imageKey = @"imageFile";
         
         self.pullToRefreshEnabled = YES;
         
@@ -38,7 +39,6 @@
 
 
 #pragma mark - UIViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -91,31 +91,29 @@
     // This method is called every time objects are loaded from Parse via the PFQuery
 }
 
-/*
- // Override to customize what kind of query to perform on the class. The default is to query for
- // all objects ordered by createdAt descending.
- - (PFQuery *)queryForTable {
- PFQuery *query = [PFQuery queryWithClassName:self.className];
- 
- // If Pull To Refresh is enabled, query against the network by default.
- if (self.pullToRefreshEnabled) {
- query.cachePolicy = kPFCachePolicyNetworkOnly;
- }
- 
- // If no objects are loaded in memory, we look to the cache first to fill the table
- // and then subsequently do a query against the network.
- if (self.objects.count == 0) {
- query.cachePolicy = kPFCachePolicyCacheThenNetwork;
- }
- 
- [query orderByDescending:@"createdAt"];
- 
- return query;
- }
- */
+
+- (PFQuery *)queryForTable {
+    PFQuery *query = [PFQuery queryWithClassName:self.className];
+    [query whereKey:@"user" equalTo:[PFUser currentUser]];
+    [query findObjects];
+
+    // If Pull To Refresh is enabled, query against the network by default.
+    if (self.pullToRefreshEnabled) {
+        query.cachePolicy = kPFCachePolicyNetworkOnly;
+    }
+    
+    // If no objects are loaded in memory, we look to the cache first to fill the table
+    // and then subsequently do a query against the network.
+//    if (self.objects.count == 0) {
+//        query.cachePolicy = kPFCachePolicyCacheThenNetwork;
+//    }
+    
+    [query orderByDescending:@"createdAt"];
+    
+    return query;
+}
 
 
- 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object {
     static NSString *CellIdentifier = @"Cell";
     
@@ -127,7 +125,7 @@
     // Configure the cell
     cell.userInteractionEnabled = NO;
 //    cell.textLabel.text = [object objectForKey:self.textKey];
-    cell.imageView.file = [object objectForKey:self.imageKey];
+    cell.imageView.file = [object objectForKey:@"imageFile"];
     cell.textLabel.text = [object objectForKey:@"location"];
     cell.detailTextLabel.frame = CGRectMake(100, 90, 200, 30);
     return cell;
