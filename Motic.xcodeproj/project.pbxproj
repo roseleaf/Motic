@@ -75,6 +75,7 @@
 		96E94FDB15FDAE7500EC8E0C /* FaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E94FDA15FDAE7500EC8E0C /* FaceView.m */; };
 		96E94FDD15FDAEAB00EC8E0C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E94FDC15FDAEAB00EC8E0C /* CoreLocation.framework */; };
 		96E94FEA15FDB66600EC8E0C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E94FE915FDB66600EC8E0C /* MapKit.framework */; };
+		96FB750E16430F46009E1F38 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 96FB750D16430F46009E1F38 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -163,6 +164,7 @@
 		96E94FDA15FDAE7500EC8E0C /* FaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FaceView.m; path = ../FaceView.m; sourceTree = "<group>"; };
 		96E94FDC15FDAEAB00EC8E0C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		96E94FE915FDB66600EC8E0C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		96FB750D16430F46009E1F38 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				9615946F1607EABD008482E2 /* MapMeViewController.h */,
+				96FB750D16430F46009E1F38 /* README.md */,
 				961594701607EABD008482E2 /* MapMeViewController.m */,
 				961594711607EABD008482E2 /* MapMeViewController.xib */,
 				9615948A16091131008482E2 /* MapAllViewController.h */,
@@ -436,6 +439,7 @@
 				96CD1EB0160A93A2002A5094 /* longerbutton@2x.png in Resources */,
 				96CD1EB2160A97A8002A5094 /* icon.png in Resources */,
 				96CD1EB4160A97BF002A5094 /* icon@2x.png in Resources */,
+				96FB750E16430F46009E1F38 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
